@@ -76,17 +76,84 @@ header nav ul li a:hover { color: #ffd700; }
 }
 .btn-cta:hover { background: #ffd700; color: #0a0a0a; }
 
-/* PROJECTS SECTION */
 section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
 .project-card { background: #1f1f1f; padding: 1.5rem; margin: 1rem 0; border-radius: 10px; transition: transform 0.3s; cursor: pointer; }
 .project-card:hover { transform: translateY(-5px); }
 .btn { display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: #1e90ff; border-radius: 50px; transition: background 0.3s; }
 .btn:hover { background: #ffd700; color: #0a0a0a; }
 
-/* SKILLS SECTION */
+
 .skill { margin: 1rem 0; }
 .skill-bar { background:#333; height:20px; border-radius:10px; overflow:hidden; }
 .skill-bar div { background:#1e90ff; width:0; height:100%; transition: width 1.5s; }
 
-/* FOOTER */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.contact-link span {
+  margin-left: 12px;
+  word-break: break-all; /* prevents overflow on small screens */
+}
+
+.contact-link:hover {
+  color: #1da1f2;
+  transform: scale(1.05);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.icon-circle img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-link:hover .icon-circle {
+  background-color: #1da1f2;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    gap: 15px;
+    padding: 20px 10px;
+  }
+
+  .contact-link {
+    font-size: 14px;
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-circle img {
+    width: 20px;
+    height: 20px;
+  }
+}
 footer { text-align:center; padding:2rem; background:#111; color:#bbb; }
