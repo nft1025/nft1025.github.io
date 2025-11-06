@@ -1,4 +1,4 @@
-/* GENERAL */
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,7 +6,7 @@ body {
   background-color: #0a0a0a;
 }
 
-/* NAVIGATION */
+
 header {
   position: fixed;
   width: 100%;
@@ -42,10 +42,10 @@ header nav ul li a:hover { color: #ffd700; }
 }
 .btn-contact:hover { background: #ffd700; color: #0a0a0a; }
 
-/* HERO SECTION */
+
 .hero {
   height: 100vh;
-  background: url('images/dac87a7c-140b-4707-8b91-a7afe77c968d.png') center/cover no-repeat;
+  background: url('https://lens.usercontent.google.com/image?vsrid=COSVxcL05tfSvwEQAhgBIiRmOTliYjkxYS0wMjEyLTQ4ODMtYjE5YS1iNzgwZWEwMzQ1ODUyBiICc2QoCzig6frOy9yQAw&gsessionid=jNUXHoDkke4Z3FE57YzkJvzMOyRlMusag5pieU1UhztExpB_eU9Ceg') center/cover no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
