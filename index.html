@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neil Francis A. Teresa | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="images/profile.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neil Francis A. Teresa | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/profile.jpg">
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm <span>Neil Francis A. Teresa</span></h1>
-    <p>🎓 Computer Engineer | 💻 Aspiring AI Engineer | 🌐 Full Stack Developer | 📊 Data Analyst</p>
-  </header>
 
-  <section id="projects">
-    <h2>📚 University / Internship Projects</h2>
-    <div class="project">
-      <h3>🐟 AI Related Activities</h3>
-      <p>AI projects including data preparation, regression, and classification.</p>
-      <p><strong>Tech Used:</strong> Python, OpenCV, sklearn, Matplotlib, Pandas</p>
-      <a href="https://github.com/nft1025/AI-activities" target="_blank">🔗 View Project</a>
-    </div>
 
-    <div class="project">
-      <h3>🎉 Event Management System</h3>
-      <p>Back-end developer for a student registration system.</p>
-      <p><strong>Tech Used:</strong> PHP, XAMPP, MySQL</p>
-      <a href="https://github.com/nft1025/ncp3106_grp3" target="_blank">🔗 View Project</a>
-    </div>
+<header>
+  <div class="nav-container">
+    <h1>Neil Francis A. Teresa</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p>🎓 Computer Engineer | 💻 Aspiring AI Engineer | 🌐 Full Stack Developer</p>
+</header>
 
-    <div class="project">
-      <h3>💻 Web Development Activities</h3>
-      <p>Developed various websites for different purposes.</p>
-      <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
-      <a href="https://github.com/nft1025/teresa" target="_blank">🔗 View Project</a>
-    </div>
 
-    <div class="project">
-      <h3>⏰ Time Manager Website</h3>
-      <p>A web app to organize schedules and deadlines.</p>
-      <p><strong>Tech Used:</strong> TypeScript, ReactJS, NodeJS</p>
-      <a href="https://github.com/nft1025/task" target="_blank">🔗 View Project</a>
-    </div>
-  </section>
+<section id="projects">
+  <h2>📚 Projects</h2>
 
-  <section id="skills">
-    <h2>🧠 Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, C++, JavaScript, PHP</li>
-      <li><strong>Frameworks:</strong> Flask, TensorFlow, ReactJS, Bootstrap</li>
-      <li><strong>Tools:</strong> Raspberry Pi, VS Code, Cisco Packet Tracer</li>
-      <li><strong>Soft Skills:</strong> Communication, Adaptability, Leadership</li>
-    </ul>
-  </section>
+  <div class="project-card" onclick="toggleDetails(this)">
+    <h3>🐟 AI Related Activities</h3>
+    <p class="details">AI projects including data preparation, regression, and classification. Tech Used: Python, OpenCV, sklearn, Pandas.</p>
+    <a href="https://github.com/nft1025/AI-activities" target="_blank" class="btn">View Project</a>
+  </div>
 
-  <section id="contact">
-    <h2>📫 Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:neilfrancisteresa22@gmail.com">neilfrancisteresa22@gmail.com</a></p>
-    <p><strong>Portfolio:</strong> <a href="https://nft1025.github.io">nft1025.github.io</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/neilteresa25">linkedin.com/in/neilteresa25</a></p>
-  </section>
+  <div class="project-card" onclick="toggleDetails(this)">
+    <h3>🎉 Event Management System</h3>
+    <p class="details">Back-end developer for student registration system. Tech Used: PHP, XAMPP, MySQL.</p>
+    <a href="https://github.com/nft1025/ncp3106_grp3" target="_blank" class="btn">View Project</a>
+  </div>
 
-  <footer>
-    <p>✨ Thanks for visiting my portfolio ✨</p>
-  </footer>
+  <div class="project-card" onclick="toggleDetails(this)">
+    <h3>💻 Web Development Activities</h3>
+    <p class="details">Developed various websites for different purposes. Tech Used: HTML, CSS, JavaScript.</p>
+    <a href="https://github.com/nft1025/teresa" target="_blank" class="btn">View Project</a>
+  </div>
+
+  <div class="project-card" onclick="toggleDetails(this)">
+    <h3>⏰ Time Manager Website</h3>
+    <p class="details">A web app to organize schedules and deadlines. Tech Used: TypeScript, ReactJS, NodeJS.</p>
+    <a href="https://github.com/nft1025/task" target="_blank" class="btn">View Project</a>
+  </div>
+</section>
+
+
+<section id="skills">
+  <h2>🧠 Skills</h2>
+  <div class="skill">
+    <span>Python</span>
+    <div class="skill-bar"><div data-width="90%"></div></div>
+  </div>
+  <div class="skill">
+    <span>JavaScript</span>
+    <div class="skill-bar"><div data-width="80%"></div></div>
+  </div>
+  <div class="skill">
+    <span>ReactJS</span>
+    <div class="skill-bar"><div data-width="75%"></div></div>
+  </div>
+  <div class="skill">
+    <span>PHP</span>
+    <div class="skill-bar"><div data-width="70%"></div></div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>📫 Contact</h2>
+  <p>Email: <a href="mailto:neilfrancisteresa22@gmail.com">neilfrancisteresa22@gmail.com</a></p>
+  <p>Portfolio: <a href="https://nft1025.github.io">nft1025.github.io</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/neilteresa25">linkedin.com/in/neilteresa25</a></p>
+</section>
+
+<footer>
+  <p>✨ Thanks for visiting my portfolio ✨</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
