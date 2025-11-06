@@ -1,9 +1,3 @@
-
-function toggleDetails(card) {
-  const details = card.querySelector('.details');
-  details.style.display = (details.style.display === "block") ? "none" : "block";
-}
-
 window.addEventListener('scroll', () => {
   const skills = document.querySelectorAll('.skill-bar div');
   skills.forEach(skill => {
