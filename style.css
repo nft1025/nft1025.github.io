@@ -89,11 +89,11 @@ section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
 
 .contact-container {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
-  gap: 30px;               
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  gap: 40px;               /* space between icons */
   padding: 40px 20px;
-  flex-wrap: wrap;       
+  flex-wrap: wrap;         /* allows wrapping on small screens */
 }
 
 .contact-link {
@@ -136,6 +136,59 @@ section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
     width: 24px;
     height: 24px;
   }
+  .contact-container {
+    gap: 25px;
+  }
+}
 
+}
+.navbar {
+  position: sticky;      /* Makes it stick on top when scrolling */
+  top: 0;
+  width: 100%;
+  background-color: #1f1f1f; /* Dark color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;         /* Stays on top of other content */
+  transition: background-color 0.3s, padding 0.3s; /* Smooth effect on scroll */
+}
+
+/* Optional: Change color on scroll */
+.navbar.scrolled {
+  background-color: #121212; /* Darker when scrolled */
+  padding: 10px 40px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #1da1f2;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+  }
 }
 footer { text-align:center; padding:2rem; background:#111; color:#bbb; }
