@@ -5,7 +5,7 @@
 </h3>
 
 <p align="center">
-🚀 Skilled in Python, C++, HTML, JavaScript, PHP, SQL <br>
+🚀 Skilled in Python, C++, HTML, JavaScript, PHP, SQL, Database Management, Static/Dynamic Routing in Cisco Packet Tracer, Machine Learning (Supervised/Unsupervised) <br>
 💡 Passionate about learning and exploring new technologies!
 </p>
 
