@@ -45,7 +45,7 @@ header nav ul li a:hover { color: #ffd700; }
 
 .hero {
   height: 100vh;
-  background: url('https://lens.usercontent.google.com/image?vsrid=COSVxcL05tfSvwEQAhgBIiRmOTliYjkxYS0wMjEyLTQ4ODMtYjE5YS1iNzgwZWEwMzQ1ODUyBiICc2QoCzig6frOy9yQAw&gsessionid=jNUXHoDkke4Z3FE57YzkJvzMOyRlMusag5pieU1UhztExpB_eU9Ceg') center/cover no-repeat;
+  background: url('Assets/bg.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
@@ -89,71 +89,53 @@ section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
 
 .contact-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: center; 
+  align-items: center;     
+  gap: 30px;               
   padding: 40px 20px;
+  flex-wrap: wrap;       
 }
 
 .contact-link {
-  display: flex;
-  align-items: center;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  transition: transform 0.2s, color 0.2s;
-}
-
-.contact-link span {
-  margin-left: 12px;
-  word-break: break-all; /* prevents overflow on small screens */
+  transition: transform 0.2s;
 }
 
 .contact-link:hover {
-  color: #1da1f2;
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 .icon-circle {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #1f1f1f;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   transition: background-color 0.2s, transform 0.2s;
 }
 
 .icon-circle img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 
 .contact-link:hover .icon-circle {
   background-color: #1da1f2;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
+/* Responsive */
 @media (max-width: 600px) {
-  .contact-container {
-    gap: 15px;
-    padding: 20px 10px;
-  }
-
-  .contact-link {
-    font-size: 14px;
-  }
-
   .icon-circle {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+  }
+  .icon-circle img {
+    width: 24px;
+    height: 24px;
   }
 
-  .icon-circle img {
-    width: 20px;
-    height: 20px;
-  }
 }
 footer { text-align:center; padding:2rem; background:#111; color:#bbb; }
