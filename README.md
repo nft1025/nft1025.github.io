@@ -1,8 +1,7 @@
 <!-- HEADER -->
 <h1 align="center">👋 Hi, I'm <span style="color:#0078ff;">Neil Francis A. Teresa</span></h1>
 <h3 align="center">
-🎓 Computer Engineer | 💻 Aspiring AI Engineer | 🌐 Full Stack Developer | 📊 Data Analyst | 🌉 Network Engineer
-</h3>
+🎓 Computer Engineer | 💻 Aspiring AI Engineer | 🌐 Full Stack Developer |
 
 <p align="center">
 🚀 Skilled in Python, C++, HTML, JavaScript, PHP, SQL, Database Management, Static/Dynamic Routing in Cisco Packet Tracer, Machine Learning (Supervised/Unsupervised) <br>
