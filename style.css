@@ -207,12 +207,11 @@ body[data-theme="light"] .glass-card {
 }
 
 .theme-toggle-track {
-  width: 92px;
-  height: 48px;
-  padding: 0 10px;
+  width: 78px;
+  height: 42px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   border-radius: 999px;
   border: 1px solid var(--panel-border);
@@ -222,20 +221,39 @@ body[data-theme="light"] .glass-card {
 }
 
 .theme-icon {
+  position: absolute;
+  top: 50%;
   z-index: 1;
-  font-size: 0.68rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  line-height: 1;
   color: var(--muted);
+  opacity: 0.72;
+  transform: translate(-50%, -50%);
+  transition: color 0.25s ease, opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.theme-icon-moon {
+  left: 21px;
+}
+
+.theme-icon-sun {
+  left: 57px;
+}
+
+body[data-theme="light"] .theme-icon-sun,
+body[data-theme="dark"] .theme-icon-moon {
+  color: var(--text);
+  opacity: 1;
 }
 
 .theme-toggle-thumb {
   position: absolute;
-  top: 5px;
-  left: 6px;
-  width: 36px;
-  height: 36px;
+  top: 4px;
+  left: 4px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
@@ -243,7 +261,7 @@ body[data-theme="light"] .glass-card {
 }
 
 body[data-theme="light"] .theme-toggle-thumb {
-  transform: translateX(44px);
+  transform: translateX(36px);
 }
 
 main {
