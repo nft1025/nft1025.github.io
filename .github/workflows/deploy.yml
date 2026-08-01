@@ -20,7 +20,7 @@ jobs:
     env:
       # Set this to your repo name (e.g. "portfolio").
       # Leave empty if this repo is your <username>.github.io user page.
-      REPO_NAME: ""
+      REPO_NAME: "nft1025.github.io"
       NEXT_PUBLIC_OPENROUTER_MODEL: "google/gemma-4-26b-a4b-it:free"
       NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
     steps:
