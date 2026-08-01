@@ -1,9 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ProjectCard } from "./ProjectCard";
 
-const projects = [
+type Project = {
+  tag: string;
+  title: string;
+  desc: string;
+};
+
+const projects: Project[] = [
   {
     tag: "AI / PYTHON",
     title: "AI related activities",
@@ -25,6 +30,29 @@ const projects = [
     desc: "A time organizer built during an internship using React, TypeScript, and Node.js.",
   },
 ];
+
+type ProjectCardProps = {
+  project: Project;
+  index: number;
+};
+
+export function ProjectCard({ project, index }: ProjectCardProps) {
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.05 }}
+      className="rounded-3xl border border-[var(--border-soft)] bg-[var(--surface)] p-6"
+    >
+      <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-[var(--text-faint)]">
+        {project.tag}
+      </p>
+      <h3 className="mt-4 text-lg font-semibold">{project.title}</h3>
+      <p className="mt-3 text-sm leading-6 text-[var(--text-muted)]">{project.desc}</p>
+    </motion.article>
+  );
+}
 
 export function Projects() {
   return (
@@ -51,3 +79,4 @@ export function Projects() {
     </section>
   );
 }
+
