@@ -124,7 +124,7 @@ export function Hero() {
           >
             stack: <b className="font-medium text-amber">Python</b> ·{" "}
             <b className="font-medium text-amber">C++</b> · HTML ·
-            JavaScript · PHP · SQL · Packet Tracer ·{" "}
+            JavaScript · PHP · SQL · Power Apps · Copilot Studio Agent ·{" "}
             <b className="font-medium text-amber">Machine Learning</b>
           </motion.div>
 

@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 const skills = [
   { label: "Python", value: 85 },
-  { label: "SharePoint automation", value: 85 },
+  { label: "PowerApps Development", value: 85 },
+  { label: "Copilot Studio Agent Development",value:70},
   { label: "Cisco packet tracer routing", value: 85 },
   { label: "Database management", value: 80 },
   { label: "HTML", value: 70 },
