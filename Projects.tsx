@@ -16,7 +16,7 @@ export default function Home() {
         <Contact />
       </section>
       <footer className="px-8 py-7 text-center font-mono text-[11px] text-[var(--text-faint)] md:px-14">
-        © 2026 NEIL FRANCIS A. TERESA — BUILT WITH PURPOSE.
+        © 2026 NEIL FRANCIS A. TERESA — PORTFOLIO.
       </footer>
       <Chatbot />
     </main>
